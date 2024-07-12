@@ -1,10 +1,8 @@
-import DesignPage from "./design";
-import { Incrementer } from "./Incrementer";
-
+import Review from "./reviewpage";
 export default async function Home() {
   return (
     <>
-      <DesignPage />
+        < Review />
     </>
   );
 }
