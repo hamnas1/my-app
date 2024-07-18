@@ -1,10 +1,11 @@
-import Review from "./reviewpage";
-import DesignPage from "./design";
+import { CommunityPage, DesignPage } from "./design";
+import { Review } from "./reviewpage";
 export default async function Home() {
   return (
     <>
-    <DesignPage />
-        < Review />
+      <CommunityPage />
+      < Review />
+      <DesignPage />
     </>
   );
 }
