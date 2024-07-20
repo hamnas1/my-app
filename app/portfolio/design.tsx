@@ -1,4 +1,5 @@
-import { SectionDescription, SectionHeading, SubHeading } from "@/components/heading";
+import { SectionDescription, SectionHeading, SubHeading, FooterHeading, FooterContainer, FooterSubHeading } from "@/components/heading";
+
 
 export const CommunityPage = () => {
   return (
@@ -127,3 +128,76 @@ const PricingCard = ({ type, plan, price, features, cta }: PricingCardProps) => 
     </div>
   );
 };
+
+
+
+export const PageFooter = () => {
+    return (
+        <div className="flex flex-col justify-start items-start gap-8 mt-16 sm:mt-32 p-4 lg:p-8 bg-gray-900">
+            <div className="self-stretch flex flex-row justify-between flex-wrap items-start">
+            
+                <div className="flex flex-col justify-start items-start gap-8">
+                    <FooterHeading>
+                        100 days of Flutter
+                    </FooterHeading>
+                    <FooterSubHeading>
+                        A product of hacking with flutter
+                    </FooterSubHeading>
+                    <div className="flex flex-row justify-start items-start gap-6">
+                        
+                        <img src="img-url" alt="Image 1" />
+                        <img src="img-url" alt="Image 2" />
+                        <img src="img-url" alt="Image 3" />
+                        <img src="img-url" alt="Image 4" />
+                        <img src="img-url" alt="Image 5" />
+                    </div>
+                </div>
+
+                
+                <div className="flex flex-col justify-start items-start gap-8">
+                    <FooterHeading>
+                        Quick Links
+                    </FooterHeading>
+                    <FooterContainer>
+                        Pricing <br />
+                        Get Started <br />
+                        About <br />
+                        Community<br />
+                    </FooterContainer>
+                </div>
+
+            
+                <div className="flex flex-col justify-start items-start gap-8">
+                    <FooterHeading>
+                        Legal Links
+                    </FooterHeading>
+                    <FooterContainer>
+                        Privacy Policy<br />
+                        Terms of service <br />
+                        Refund Policy <br />
+                        Contact us <br />
+                    </FooterContainer>
+                </div>
+
+                <div className="flex flex-col justify-start items-start gap-4">
+                    <FooterHeading>
+                        Subscribe to Newsletter
+                    </FooterHeading>
+                    <div className="flex items-center justify-center">
+                        <div className="flex rounded-lg overflow-hidden">
+                            <input
+                                type="email"
+                                className="flex-grow p-4 text-gray-600"
+                                placeholder="Enter email address"
+                            />
+                            <button className="p-4 bg-blue-500 text-white font-medium">
+                                Join
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}
+

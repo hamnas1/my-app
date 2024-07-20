@@ -1,6 +1,7 @@
+import { Children, ReactNode } from "react";
 
 type HeadingProps = {
-  children: string | JSX.Element;
+  children: string | JSX.Element | ReactNode ;
 };
 
 // Section Heading 64px
@@ -42,3 +43,26 @@ export const SubHeading = ({ children }: HeadingProps) => {
     </span>
   );
 };
+ 
+export const FooterHeading = ({ children }: HeadingProps) => {
+    return (
+      <span className=" font-bold font-roboto text-base  text-left text-white">
+        {children}
+      </span>
+    );
+  };
+  export const FooterContainer = ({ children }: HeadingProps) => {
+    return (
+      <span className=" flex flex-col justify-start items-start gap-5 p-0 font-roboto text-white font-normal text-[16px]">
+        {children}
+      </span>
+    );
+  };
+  export const FooterSubHeading = ({ children }: HeadingProps) => {
+    return (
+      <span className="  font-roboto text-sm font-normal text-left text-gray-300">
+        {children}
+      </span>
+    );
+  };
+  
