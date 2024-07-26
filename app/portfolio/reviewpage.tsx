@@ -54,7 +54,7 @@ export const Review = () => {
   ];
 
   return (
-    <div className="px-20">
+    <div className="px-20 pt-[120px]">
       <div>
         <SectionHeading>
           Hear from our community
