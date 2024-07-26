@@ -110,3 +110,19 @@ export const QuestionContainer = ({ children }: HeadingProps) => {
     </span>
   );
 };
+
+export const HeaderHeading = ({ children }: HeadingProps) => {
+    return (
+      <span className="flex-shrink-0 font-roboto text-sm font-medium text-center text-gray-700 ">
+        {children}
+      </span>
+    );
+  };
+
+  export const HeaderSubHeading = ({ children }: HeadingProps) => {
+    return (
+      <span className="flex-grow font-roboto text-base font-normal  text-left text-gray-600 ">
+        {children}
+      </span>
+    );
+  };
