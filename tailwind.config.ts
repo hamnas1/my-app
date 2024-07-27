@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss';
 
 // https://stackoverflow.com/a/76919264/16220781
+/** @type {import('tailwindcss').Config} */
 const config: Config = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -25,11 +26,7 @@ const config: Config = {
         '13': 'repeat(13, minmax(0, 1fr))',
       },
       colors: {
-        blue: {
-          400: '#2589FE',
-          500: '#0070F3',
-          600: '#2F6FEB',
-        },
+        "appprimary": "#1774ff",
       },
     },
     keyframes: {
@@ -42,10 +39,26 @@ const config: Config = {
   },
   plugins: [
     // require('@tailwindcss/forms')({ strategy: 'class' }),
-    // require('daisyui'),
+    require('daisyui'),
   ],
   daisyui: {
-    themes: ["light"]
+    themes: [
+      {
+        light: {
+          ...require("daisyui/src/theming/themes")["light"],
+          "primary": "#1774ff",
+          "secondary": "oklch(69.71% 0.329 342.55)",
+          "secondary-content": "oklch(98.71% 0.0106 342.55)",
+          "accent": "oklch(76.76% 0.184 183.61)",
+          "neutral": "#2B3440",
+          "neutral-content": "#D7DDE4",
+          "base-100": "oklch(100% 0 0)",
+          "base-200": "#F2F2F2",
+          "base-300": "#E5E6E6",
+          "base-content": "#1f2937",
+        }
+      }
+    ]
   }
 };
 export default config;
