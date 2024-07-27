@@ -21,7 +21,7 @@ export const Qna = () => {
 
   return (
     <Section >
-      <div className=" flex flex-row gap-4 relative">
+      <div className=" flex flex-col md:flex-row  gap-4 relative">
         <SectionTitle
           heading="Let us listen to your problems"
           subheading="Got Questions? We&apos;ve got answers"

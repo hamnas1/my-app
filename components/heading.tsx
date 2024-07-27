@@ -13,7 +13,7 @@ type HeadingProps = {
 
 export const SectionHeading = ({ color = "text-[#171717]", children }: HeadingProps) => {
   return (
-    <span className={`text-6xl font-medium tracking-[0px] ${color}`}>
+    <span className={`text-5xl font-medium tracking-[0px] ${color}`}>
       {children}
     </span>
   );

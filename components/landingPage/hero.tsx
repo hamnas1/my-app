@@ -14,14 +14,14 @@ export const Hero = () => {
         <div className=" w-[300px] h-[271.1px] bg-[#fea520] -z-10 absolute right-0 bottom-[50%] filter blur-[300px]">
           {" "}
         </div>
-        <div className=" flex flex-row">
+        <div className=" flex flex-col md:flex-row">
           <div className=" flex-1">
             <Heading />
           </div>
-          <div className=" flex-1"></div>
+          <div className="flex-1"></div>
         </div>
-        <div className=" flex flex-row">
-          <div className=" flex-1"></div>
+        <div className=" flex flex-col md:flex-row">
+          <div className="flex-1 pt-4"></div>
           <div className=" flex-1"> <SubHeading /></div>
         </div>
         <div className="pt-16" />
