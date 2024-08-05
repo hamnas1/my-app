@@ -101,19 +101,19 @@ export const Feature = () => {
       />
       <div className=" pt-16" />
       <div className="grid grid-cols-6 gap-6 ">
-        <div className="col-span-3">
+        <div className="col-span-6 md:col-span-3">
           <FeatureCard icon={features[0].icon} title={features[0].title} />
         </div>
-        <div className="col-span-3">
+        <div className="col-span-6 md:col-span-3">
           <FeatureCard icon={features[1].icon} title={features[1].title} />
         </div>
-        <div className="col-span-2">
+        <div className="col-span-6 md:col-span-2">
           <FeatureCard icon={features[2].icon} title={features[2].title} />
         </div>
-        <div className="col-span-2">
+        <div className="col-span-6 md:col-span-2">
           <FeatureCard icon={features[3].icon} title={features[3].title} />
         </div>
-        <div className="col-span-2">
+        <div className="col-span-6 md:col-span-2">
           <FeatureCard icon={features[4].icon} title={features[4].title} />
         </div>
       </div>

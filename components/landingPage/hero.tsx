@@ -5,15 +5,21 @@ import { SectionDescription } from "../heading";
 export const Hero = () => {
 
   return (
-    <div className="container">
+    <div className="container pb-6">
       <div className="pt-16" />
       <div className=" flex flex-col relative">
-        <div className=" w-[300px] h-[271.1px] bg-[#2279fc] -z-10 absolute left-0 bottom-[50%] filter blur-[300px]">
-          {" "}
+      <div className="absolute w-full h-[500px]">
+      <div className="relative inset-0 flex flex-col md:flex-row justify-between items-center">
+      <div className="w-[300px] h-[271.1px] bg-[#2279fc] -z-10 filter blur-[300px] 
+                      mb-4 md:mb-0 md:w-[300px] md:h-[271.1px] md:relative md:left-0 md:bottom-0">
+        {" "}
+      </div>
+      <div className="w-[300px] h-[271.1px] bg-[#fea520] -z-10 filter blur-[300px] 
+                      mb-4 md:mb-0 md:w-[300px] md:h-[271.1px] md:relative md:right-0 md:bottom-0 
+                      sm:absolute sm:right-0 sm:bottom-0"></div>
+
         </div>
-        <div className=" w-[300px] h-[271.1px] bg-[#fea520] -z-10 absolute right-0 bottom-[50%] filter blur-[300px]">
-          {" "}
-        </div>
+      </div>
         <div className=" flex flex-col md:flex-row">
           <div className=" flex-1">
             <Heading />
