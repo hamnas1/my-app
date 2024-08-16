@@ -1,0 +1,36 @@
+{
+    "introduction": {
+      "title": "Introduction",
+      "theme": {
+        "layout":"full",
+        "breadcrumb": false,
+        "footer": false,
+        "sidebar": false,
+        "toc": false,
+        "pagination": true
+      }
+    },
+    
+    "100days": {
+        "title": "Introduction",
+        "theme": {
+          "layout":"full",
+          "breadcrumb": false,
+          "footer": false,
+          "sidebar": false,
+          "toc": false,
+          "pagination": true
+        }
+      },
+      "Day4": {
+        "title": "Introduction",
+        "theme": {
+          "layout":"full",
+          "breadcrumb": false,
+          "footer": false,
+          "sidebar": false,
+          "toc": false,
+          "pagination": true
+        }
+      }
+  }
