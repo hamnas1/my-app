@@ -1,0 +1,215 @@
+import { useState } from 'react';
+
+### My Component with State
+
+```jsx
+const OptionSelector = () => {
+  // State to track the selected option
+  const [selectedOption, setSelectedOption] = useState('');
+
+  // Function to handle option click
+  const handleOptionClick = (option) => {
+    setSelectedOption(option);
+  };
+
+  return (
+    <div>
+      <div
+        style={{
+          alignSelf: 'stretch',
+          flexGrow: '0',
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'flex-start',
+          alignItems: 'center',
+          gap: '16px',
+          padding: '12px 16px',
+          borderLeft: 'solid 1px #eee',
+          borderRight: 'solid 1px #eee',
+          borderTop: 'solid 1px #eee',
+          borderBottom: 'solid 1px #eee',
+        }}
+        onClick={() => handleOptionClick('option1')}
+      >
+        <span
+          style={{
+            width: '32px',
+            height: '32px',
+            flexGrow: '0',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+            gap: '10px',
+            padding: '8px 16px',
+            borderRadius: '99px',
+            border: 'solid 1px rgba(221, 221, 221, 0.87)',
+            backgroundColor: '#eaeefa',
+          }}
+        >
+          <svg
+            width="10"
+            height="11"
+            viewBox="0 0 10 11"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.65057 10.5H0.357955L4.09659 0.318182H5.36932L9.10795 10.5H7.81534L4.77273 1.92898H4.69318L1.65057 10.5ZM2.12784 6.52273H7.33807V7.61648H2.12784V6.52273Z"
+              fill="#535970"
+            />
+          </svg>
+        </span>
+        <span
+          style={{
+            flexGrow: '0',
+            fontFamily: 'Roboto',
+            fontSize: '16px',
+            fontWeight: 'normal',
+            fontStretch: 'normal',
+            fontStyle: 'normal',
+            textAlign: 'center',
+            color: '#5f5f5f',
+          }}
+        >
+          ‘status.tsx’ and ‘pagination.tsx’
+        </span>
+      </div>
+
+      <div
+        style={{
+          alignSelf: 'stretch',
+          flexGrow: '0',
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'flex-start',
+          alignItems: 'center',
+          gap: '16px',
+          padding: '12px 16px',
+          borderLeft: 'solid 1px #eee',
+          borderRight: 'solid 1px #eee',
+          borderBottom: 'solid 1px #eee',
+        }}
+        onClick={() => handleOptionClick('option2')}
+      >
+        <span
+          style={{
+            width: '32px',
+            height: '32px',
+            flexGrow: '0',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+            gap: '10px',
+            padding: '8px 16px',
+            borderRadius: '99px',
+            border: 'solid 1px rgba(221, 221, 221, 0.87)',
+            backgroundColor: '#eaeefa',
+          }}
+        >
+          <svg
+            width="8"
+            height="11"
+            viewBox="0 0 8 11"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.232955 10.5V0.318182H3.79261C4.50189 0.318182 5.08688 0.440814 5.54759 0.68608C6.00829 0.92803 6.35133 1.2545 6.5767 1.66548C6.80208 2.07315 6.91477 2.52557 6.91477 3.02273C6.91477 3.46023 6.83688 3.8215 6.68111 4.10653C6.52865 4.39157 6.32647 4.61695 6.07457 4.78267C5.82599 4.94839 5.55587 5.07102 5.2642 5.15057V5.25C5.57576 5.26989 5.88897 5.37926 6.20384 5.57812C6.5187 5.77699 6.7822 6.06203 6.99432 6.43324C7.20644 6.80445 7.3125 7.25852 7.3125 7.79545C7.3125 8.30587 7.1965 8.76491 6.96449 9.17259C6.73248 9.58026 6.36624 9.90341 5.86577 10.142C5.36529 10.3807 4.71402 10.5 3.91193 10.5H0.232955ZM1.46591 9.40625H3.91193C4.71733 9.40625 5.28906 9.25047 5.62713 8.93892C5.96851 8.62405 6.1392 8.2429 6.1392 7.79545C6.1392 7.45076 6.05137 7.13258 5.87571 6.84091C5.70005 6.54593 5.44981 6.31061 5.125 6.13494C4.80019 5.95597 4.41572 5.86648 3.97159 5.86648H1.46591V9.40625ZM1.46591 4.79261H3.75284C4.12405 4.79261 4.45881 4.7197 4.7571 4.57386C5.05871 4.42803 5.29735 4.22254 5.47301 3.95739C5.65199 3.69223 5.74148 3.38068 5.74148 3.02273C5.74148 2.57528 5.5857 2.19579 5.27415 1.88423C4.9626 1.56937 4.46875 1.41193 3.79261 1.41193H1.46591V4.79261Z"
+              fill="#535970"
+            />
+          </svg>
+        </span>
+        <span
+          style={{
+            flexGrow: '0',
+            fontFamily: 'Roboto',
+            fontSize: '16px',
+            fontWeight: 'normal',
+            fontStretch: 'normal',
+            fontStyle: 'normal',
+            textAlign: 'center',
+            color: '#5f5f5f',
+          }}
+        >
+          ‘table.tsx’ and ‘status.tsx’
+        </span>
+      </div>
+
+      <div
+        style={{
+          alignSelf: 'stretch',
+          flexGrow: '0',
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'flex-start',
+          alignItems: 'center',
+          padding: '12px 16px',
+          gap: '16px',
+          borderLeft: 'solid 1px #eee',
+          borderRight: 'solid 1px #eee',
+          borderBottom: 'solid 1px #eee',
+        }}
+        onClick={() => handleOptionClick('option3')}
+      >
+        <span
+          style={{
+            width: '32px',
+            height: '32px',
+            flexGrow: '0',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+            gap: '10px',
+            padding: '8px 16px',
+            borderRadius: '99px',
+            border: 'solid 1px rgba(221, 221, 221, 0.87)',
+            backgroundColor: '#eaeefa',
+          }}
+        >
+          <svg
+            width="9"
+            height="11"
+            viewBox="0 0 9 11"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.92614 3.5H7.69318C7.62027 3.14536 7.49266 2.83381 7.31037 2.56534C7.13139 2.29688 6.91264 2.0715 6.65412 1.8892C6.39891 1.7036 6.11553 1.56439 5.80398 1.47159C5.49242 1.37879 5.16761 1.33239 4.82955 1.33239C4.21307 1.33239 3.65459 1.48816 3.15412 1.79972C2.65696 2.11127 2.26089 2.57031 1.96591 3.17685C1.67424 3.78338 1.52841 4.52746 1.52841 5.40909C1.52841 6.29072 1.67424 7.0348 1.96591 7.64134C2.26089 8.24787 2.65696 8.70691 3.15412 9.01847C3.65459 9.33002 4.21307 9.4858 4.82955 9.4858C5.16761 9.4858 5.49242 9.43939 5.80398 9.34659C6.11553 9.25379 6.39891 9.11624 6.65412 8.93395C6.91264 8.74834 7.13139 8.52131 7.31037 8.25284C7.49266 7.98106 7.62027 7.66951 7.69318 7.31818H8.92614C8.83333 7.83854 8.6643 8.30421 8.41903 8.7152C8.17377 9.12618 7.86885 9.47585 7.50426 9.7642C7.13968 10.0492 6.73035 10.2663 6.27628 10.4155C5.82552 10.5646 5.34328 10.6392 4.82955 10.6392C3.96117 10.6392 3.18892 10.4271 2.51278 10.0028C1.83665 9.5786 1.30469 8.97538 0.916903 8.19318C0.529119 7.41098 0.335227 6.48295 0.335227 5.40909C0.335227 4.33523 0.529119 3.4072 0.916903 2.625C1.30469 1.8428 1.83665 1.23958 2.51278 0.815341C3.18892 0.391098 3.96117 0.178977 4.82955 0.178977C5.34328 0.178977 5.82552 0.253551 6.27628 0.402699C6.73035 0.551846 7.13968 0.770596 7.50426 1.05895C7.86885 1.34399 8.17377 1.692 8.41903 2.10298C8.6643 2.51065 8.83333 2.97633 8.92614 3.5Z"
+              fill="#535970"
+            />
+          </svg>
+        </span>
+        <span
+          style={{
+            flexGrow: '0',
+            fontFamily: 'Roboto',
+            fontSize: '16px',
+            fontWeight: 'normal',
+            fontStretch: 'normal',
+            fontStyle: 'normal',
+            textAlign: 'center',
+            color: '#5f5f5f',
+          }}
+        >
+          ‘nav-links.tsx’ and ‘table.tsx’
+        </span>
+      </div>
+
+      {/* Conditional Rendering */}
+      {selectedOption === 'option1' && (
+        <div>Content for status.tsx and pagination.tsx</div>
+      )}
+      {selectedOption === 'option2' && (
+        <div>Content for table.tsx and status.tsx</div>
+      )}
+      {selectedOption === 'option3' && (
+        <div>Content for nav-links.tsx and table.tsx</div>
+      )}
+    </div>
+  );
+};
+
+<OptionSelector />
