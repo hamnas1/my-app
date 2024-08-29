@@ -12,7 +12,7 @@
     },
     
     "100days": {
-        "title": "Introduction",
+        "title": "100days",
         "theme": {
           "layout":"full",
           "breadcrumb": false,
@@ -23,7 +23,7 @@
         }
       },
       "Day4": {
-        "title": "Introduction",
+        "title": "Day4",
         "theme": {
           "layout":"full",
           "breadcrumb": false,
